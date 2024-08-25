@@ -1,9 +1,12 @@
+import React from "react";
 import Map, { NavigationControl } from "react-map-gl";
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { useViewPort } from "../context/HomeContext";
+import MapData from "./MapData";
 
 export default function MapBox() {
-    const [ viewPort, setViewPort ] = useViewPort();
+    const [viewPort, setViewPort] = useViewPort();
+
 
     return <Map
         mapboxAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
@@ -12,7 +15,7 @@ export default function MapBox() {
         {...viewPort}
         onMove={ex => setViewPort(ex.viewState)}
     >
-        <NavigationControl position="bottom-left"/>
-
+        <NavigationControl position="bottom-left" />
+        <MapData />
     </Map>
 }
