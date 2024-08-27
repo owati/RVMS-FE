@@ -16,7 +16,7 @@ export default function Sidebar() {
                 <button onClick={
                     () => setSideBarOpen(false)
                 }>
-                    <img src={close} className="h-7 w-7"/>
+                    <img alt="close" src={close} className="h-7 w-7"/>
                 </button>
             </div>
 
@@ -36,7 +36,7 @@ export default function Sidebar() {
                                 </p>
                                 
 
-                                <img className="w-12 h-12" src={car_transit}/>
+                                <img alt="transit" className="w-12 h-12" src={car_transit}/>
                             </li>
                         )
                     }
