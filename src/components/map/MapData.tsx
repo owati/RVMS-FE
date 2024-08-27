@@ -83,7 +83,7 @@ export default function MapData() {
                                 >
                                     {
                                         index === arr.length - 1 ?
-                                            <img src={car_marker} className='h-10 w-10 cursor-pointer' onClick={() => toggleCallback(val)} /> :
+                                            <img alt="car marker" src={car_marker} className='h-10 w-10 cursor-pointer' onClick={() => toggleCallback(val)} /> :
                                             <div className='w-3 h-3 rounded-full bg-slate-700 cursor-pointer'
                                                 onClick={() => toggleCallback(val)} />
                                     }
